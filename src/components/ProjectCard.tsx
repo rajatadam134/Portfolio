@@ -64,8 +64,8 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, onOpenModal }
       </div>
 
       {/* Card Footer Bar */}
-      <div className="p-6 sm:p-7 flex items-center justify-between gap-4 bg-[#111111]">
-        <div>
+      <div className="p-5 sm:p-7 flex flex-col sm:flex-row sm:items-center justify-between gap-4 bg-[#111111]">
+        <div className="min-w-0">
           <h3 className="text-xl sm:text-2xl font-bold text-[#F5F5F0] group-hover:text-[#C7FF32] transition-colors">
             {project.title}
           </h3>
@@ -74,7 +74,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, onOpenModal }
           </p>
         </div>
 
-        <div className="flex items-center gap-2 shrink-0">
+        <div className="flex items-center gap-2 shrink-0 self-start sm:self-auto">
           <button
             onClick={() => onOpenModal(project)}
             className="p-2.5 rounded-full bg-[#181818] hover:bg-[#222222] border border-[#282828] text-[#929292] hover:text-[#F5F5F0] transition-colors"

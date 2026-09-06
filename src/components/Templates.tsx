@@ -9,8 +9,8 @@ interface TemplatesProps {
 
 export const Templates: React.FC<TemplatesProps> = ({ onOpenModal }) => {
   return (
-    <section id="templates" className="py-24 sm:py-32 bg-[#0C0C0C] border-t border-[#1C1C1C]">
-      <div className="max-w-7xl mx-auto px-5 sm:px-8">
+    <section id="templates" className="py-20 sm:py-32 bg-[#0C0C0C] border-t border-[#1C1C1C]">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Tight header */}
         <div className="max-w-2xl mb-16">

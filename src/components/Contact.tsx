@@ -27,7 +27,7 @@ export const Contact: React.FC = () => {
   return (
     <section id="contact" className="py-24 sm:py-32 bg-[#080808] border-t border-[#1C1C1C] relative overflow-hidden">
       {/* Side-profile silhouette watermark behind contact */}
-      <div className="absolute left-0 bottom-0 top-0 w-80 lg:w-[420px] pointer-events-none select-none opacity-[0.05] overflow-hidden">
+      <div className="absolute left-0 bottom-0 top-0 w-80 lg:w-[420px] pointer-events-none select-none opacity-[0.04] overflow-hidden hidden sm:block">
         <img
           src="/images/Rajat_Left_facing.png"
           alt=""
@@ -36,7 +36,7 @@ export const Contact: React.FC = () => {
         />
       </div>
 
-      <div className="max-w-7xl mx-auto px-5 sm:px-8 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
           

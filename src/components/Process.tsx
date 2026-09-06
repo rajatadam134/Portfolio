@@ -6,7 +6,7 @@ export const Process: React.FC = () => {
   return (
     <section id="process" className="py-24 sm:py-32 bg-[#0C0C0C] border-t border-[#1C1C1C] relative overflow-hidden">
       {/* Side-profile silhouette watermark behind process */}
-      <div className="absolute right-0 bottom-0 top-0 w-96 lg:w-[480px] pointer-events-none select-none opacity-[0.06] overflow-hidden">
+      <div className="absolute right-0 bottom-0 top-0 w-80 lg:w-[420px] pointer-events-none select-none opacity-[0.04] overflow-hidden hidden sm:block">
         <img
           src="/images/Rajat_Right_facing.png"
           alt=""
@@ -15,7 +15,7 @@ export const Process: React.FC = () => {
         />
       </div>
 
-      <div className="max-w-7xl mx-auto px-5 sm:px-8 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Tight header */}
         <div className="max-w-2xl mb-16">

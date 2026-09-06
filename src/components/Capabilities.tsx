@@ -7,8 +7,8 @@ export const Capabilities: React.FC = () => {
   const [activeId, setActiveId] = useState<string | null>(CAPABILITIES[0].id);
 
   return (
-    <section id="capabilities" className="py-24 sm:py-32 bg-[#080808] border-t border-[#1C1C1C] relative">
-      <div className="max-w-7xl mx-auto px-5 sm:px-8">
+    <section id="capabilities" className="py-20 sm:py-32 bg-[#080808] border-t border-[#1C1C1C] relative">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Tight section header */}
         <div className="max-w-2xl mb-16">
