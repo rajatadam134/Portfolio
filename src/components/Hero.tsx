@@ -89,18 +89,18 @@ export const Hero: React.FC = () => {
           {/* Integrated Bleeding Portrait with Parallax and Duotone Fade */}
           <motion.div
             style={{ y: imageY }}
-            className="lg:col-span-5 relative z-10 flex justify-center lg:justify-end lg:-mr-16 xl:-mr-32 pointer-events-none"
+            className="lg:col-span-5 relative z-10 flex justify-center lg:justify-end pointer-events-none"
           >
-            <div className="relative w-full max-w-[520px] sm:max-w-[620px] lg:max-w-none lg:w-[155%] xl:w-[170%]">
+            <div className="relative w-full max-w-[440px] sm:max-w-[500px] lg:max-w-[560px]">
               
               {/* Duotone backdrop fade into canvas */}
               <div className="absolute inset-0 bg-gradient-to-t from-[#080808] via-transparent to-transparent z-10 pointer-events-none h-full" />
-              <div className="absolute inset-y-0 left-0 w-28 bg-gradient-to-r from-[#080808] to-transparent z-10 pointer-events-none hidden lg:block" />
+              <div className="absolute inset-y-0 left-0 w-20 bg-gradient-to-r from-[#080808] to-transparent z-10 pointer-events-none hidden lg:block" />
 
               {/* Hand-drawn organic sketch halo behind shoulder */}
               <svg
                 viewBox="0 0 400 400"
-                className="absolute -top-10 -right-10 w-96 h-96 text-[#C7FF32]/20 -z-10 select-none pointer-events-none"
+                className="absolute -top-8 -right-8 w-80 h-80 text-[#C7FF32]/20 -z-10 select-none pointer-events-none"
                 fill="none"
               >
                 <circle
@@ -113,11 +113,11 @@ export const Hero: React.FC = () => {
                 />
               </svg>
 
-              {/* Portrait image: scaled large, desaturated/duotoned to blend into dark background */}
+              {/* Portrait image: scaled to fit hero section cleanly without overflow */}
               <img
                 src="/images/Rajat_Front_facing_4.png"
                 alt="Rajat"
-                className="w-full h-auto object-contain max-h-[660px] sm:max-h-[740px] lg:max-h-[880px] xl:max-h-[960px] scale-105 lg:scale-115 xl:scale-125 origin-bottom filter grayscale contrast-125 brightness-90 drop-shadow-[0_30px_50px_rgba(0,0,0,0.95)] opacity-95 transition-all duration-700"
+                className="w-full h-auto object-contain max-h-[520px] sm:max-h-[600px] lg:max-h-[720px] xl:max-h-[760px] filter grayscale contrast-125 brightness-90 drop-shadow-[0_25px_40px_rgba(0,0,0,0.95)] opacity-95 transition-all duration-700"
                 loading="eager"
               />
             </div>
