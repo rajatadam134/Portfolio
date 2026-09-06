@@ -1,18 +1,30 @@
 import React from 'react';
 import { PROCESS_STEPS } from '../data/portfolioData';
+import { SketchStroke } from './SketchMotif';
 
 export const Process: React.FC = () => {
   return (
-    <section id="process" className="py-24 sm:py-32 bg-[#0C0C0C] border-t border-[#1C1C1C] relative">
-      <div className="max-w-7xl mx-auto px-5 sm:px-8">
+    <section id="process" className="py-24 sm:py-32 bg-[#0C0C0C] border-t border-[#1C1C1C] relative overflow-hidden">
+      {/* Side-profile silhouette watermark behind process */}
+      <div className="absolute right-0 bottom-0 top-0 w-96 lg:w-[480px] pointer-events-none select-none opacity-[0.06] overflow-hidden">
+        <img
+          src="/images/Rajat_Right_facing.png"
+          alt=""
+          aria-hidden="true"
+          className="w-full h-full object-cover object-left filter grayscale contrast-150"
+        />
+      </div>
+
+      <div className="max-w-7xl mx-auto px-5 sm:px-8 relative z-10">
         
-        {/* Section Heading */}
-        <div className="max-w-3xl mb-16">
-          <h2 className="text-3xl sm:text-5xl font-bold text-[#F5F5F0] tracking-tight mb-5">
-            A focused, transparent 3-step sprint
+        {/* Tight header */}
+        <div className="max-w-2xl mb-16">
+          <h2 className="text-3xl sm:text-5xl font-bold text-[#F5F5F0] tracking-tight mb-3">
+            Sprint methodology.
           </h2>
-          <p className="text-base sm:text-lg text-[#929292] leading-relaxed">
-            No endless committee meetings, no bloated agency overhead. Straight from concept to production launch.
+          <SketchStroke color="#C7FF32" className="max-w-[120px] mb-3" />
+          <p className="text-base sm:text-lg text-[#929292]">
+            Three steps from concept to production launch.
           </p>
         </div>
 
@@ -42,8 +54,8 @@ export const Process: React.FC = () => {
                 </p>
               </div>
 
-              <div className="pt-8 mt-8 border-t border-[#1C1C1C] text-xs font-mono text-[#777777]">
-                Milestone signoff required
+              <div className="pt-8 mt-8 border-t border-[#1C1C1C] text-xs font-mono text-[#666666]">
+                Direct signoff per stage
               </div>
             </div>
           ))}
