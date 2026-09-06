@@ -73,7 +73,7 @@ export const Capabilities: React.FC = () => {
 
                 {/* Expanded Detail Tray */}
                 <div
-                  className={`grid transition-all duration-300 ease-out pl-12 sm:pl-16 overflow-hidden ${
+                  className={`grid transition-[grid-template-rows,opacity] duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] pl-12 sm:pl-16 overflow-hidden ${
                     isActive ? 'grid-rows-[1fr] opacity-100 pt-6' : 'grid-rows-[0fr] opacity-0 pt-0'
                   }`}
                 >

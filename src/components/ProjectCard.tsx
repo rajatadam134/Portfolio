@@ -51,7 +51,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, onOpenModal }
           muted
           playsInline
           preload="metadata"
-          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]"
+          className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-[1.02] transform-gpu will-change-transform"
         />
         
         {/* Subtle hover overlay hint */}
